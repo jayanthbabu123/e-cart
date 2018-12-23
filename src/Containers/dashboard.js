@@ -1,5 +1,4 @@
 import React, { Component } from 'react';
-import { apiroutes } from '../config';
 import { Header } from '../boilerplate/header';
 class Dashboard extends Component {
     state = {
