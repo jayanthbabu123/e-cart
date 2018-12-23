@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import {Link} from 'react-router-dom';
 import {startSignOut} from '../firebase/auth';
-import Search from '../Images/home/search.png';
+import Search from '../images/home/search.png';
 import {Images} from '../common/images-import';
 class Home extends Component {
     state={
