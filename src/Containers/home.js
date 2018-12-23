@@ -188,7 +188,7 @@ class Home extends Component {
                     <div class="banner_background" ></div>
                     <div class="container fill_height">
                         <div class="row fill_height">
-                            <div class="banner_product_image"><img src={require('../Images/banner_product.png')} alt="" /></div>
+                            <div class="banner_product_image"><img src={require('/../Images/banner_product.png')} alt="" /></div>
                             <div class="col-lg-5 offset-lg-4 fill_height">
                                 <div class="banner_content">
                                     <h1 class="banner_text">new era of E-Commerce</h1>
@@ -205,7 +205,7 @@ class Home extends Component {
                         <div class="row">
                             <div class="col-lg-3 col-md-6 char_col">
                                 <div class="char_item d-flex flex-row align-items-center justify-content-start">
-                                    <div class="char_icon"><img src={require('../Images/home/char_1.png')} alt="" /></div>
+                                    <div class="char_icon"><img src={require('/../Images/home/char_1.png')} alt="" /></div>
                                     <div class="char_content">
                                         <div class="char_title">Free Delivery</div>
                                         <div class="char_subtitle">from $50</div>
@@ -215,7 +215,7 @@ class Home extends Component {
 
                             <div class="col-lg-3 col-md-6 char_col">
                                 <div class="char_item d-flex flex-row align-items-center justify-content-start">
-                                    <div class="char_icon"><img src={require('../Images/home/char_2.png')} alt="" /></div>
+                                    <div class="char_icon"><img src={require('/../Images/home/char_2.png')} alt="" /></div>
                                     <div class="char_content">
                                         <div class="char_title">Easy Returns</div>
                                         <div class="char_subtitle">Free</div>
@@ -225,7 +225,7 @@ class Home extends Component {
 
                             <div class="col-lg-3 col-md-6 char_col">
                                 <div class="char_item d-flex flex-row align-items-center justify-content-start">
-                                    <div class="char_icon"><img src={require('../Images/home/char_3.png')} alt="" /></div>
+                                    <div class="char_icon"><img src={require('/../Images/home/char_3.png')} alt="" /></div>
                                     <div class="char_content">
                                         <div class="char_title">Money back</div>
                                         <div class="char_subtitle">100%</div>
@@ -235,7 +235,7 @@ class Home extends Component {
 
                             <div class="col-lg-3 col-md-6 char_col">
                                 <div class="char_item d-flex flex-row align-items-center justify-content-start">
-                                    <div class="char_icon"><img src={require('../Images/home/char_4.png')} alt="" /></div>
+                                    <div class="char_icon"><img src={require('/../Images/home/char_4.png')} alt="" /></div>
                                     <div class="char_content">
                                         <div class="char_title">Support </div>
                                         <div class="char_subtitle">24/7</div>
