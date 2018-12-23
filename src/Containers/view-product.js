@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import { Header } from '../boilerplate/header';
-
+import {Images} from '../common/images-import';
 export default class ViewProduct extends Component {
     render() {
         return (
@@ -11,13 +11,13 @@ export default class ViewProduct extends Component {
                     <div class="row">
                         <div class="col-lg-2 order-lg-1 order-2">
                             <ul class="image_list">
-                                <li data-image="images/single_4.jpg"><img src={require("../Images/home/single_4.jpg")} alt="" /></li>
-                                <li data-image="images/single_2.jpg"><img src={require("../Images/home/single_2.jpg")} alt="" /></li>
-                                <li data-image="images/single_3.jpg"><img src={require("../Images/home/single_3.jpg")} alt="" /></li>
+                                <li data-image="images/single_4.jpg"><img src={Images.single_4} alt="" /></li>
+                                <li data-image="images/single_2.jpg"><img src={Images.single_2} alt="" /></li>
+                                <li data-image="images/single_3.jpg"><img src={Images.single_3} alt="" /></li>
                             </ul>
                         </div>
                         <div class="col-lg-5 order-lg-2 order-1">
-                            <div class="image_selected"><img src={require("../Images/home/single_4.jpg")} alt="" /></div>
+                            <div class="image_selected"><img src={Images.single_4} alt="" /></div>
                         </div>
                         <div class="col-lg-5 order-3">
                             <div class="product_description">

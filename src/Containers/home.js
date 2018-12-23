@@ -1,6 +1,8 @@
 import React, { Component } from 'react';
 import {Link} from 'react-router-dom';
 import {startSignOut} from '../firebase/auth';
+import Search from '../Images/home/search.png';
+import {Images} from '../common/images-import';
 class Home extends Component {
     state={
      userData: null
@@ -39,7 +41,7 @@ class Home extends Component {
                                                         </ul>
                                                     </div>
                                                 </div>
-                                                <button type="submit" class="header_search_button trans_300" value="Submit"><img src={require('../Images/home/search.png')} alt="" /></button>
+                                                <button type="submit" class="header_search_button trans_300" value="Submit"><img src={Search} alt="" /></button>
                                             </form>
                                         </div>
                                     </div>
@@ -50,7 +52,7 @@ class Home extends Component {
                             <div class="col-lg-4 col-9 order-lg-3 order-2 text-lg-left text-right">
                                 <div class="wishlist_cart d-flex flex-row align-items-center justify-content-end">
                                     <div class="wishlist d-flex flex-row align-items-center justify-content-end">
-                                        <div class="wishlist_icon"><img src={require('../Images/home/heart.png')} alt="" /></div>
+                                        <div class="wishlist_icon"><img src={Images.Heart} alt="" /></div>
                                         <div class="wishlist_content">
                                             <div class="wishlist_text"><a href="#">Wishlist</a></div>
                                             <div class="wishlist_count">115</div>
@@ -61,7 +63,7 @@ class Home extends Component {
                                     <div class="cart">
                                         <div class="cart_container d-flex flex-row align-items-center justify-content-end">
                                             <div class="cart_icon">
-                                                <img src={require('../Images/home/cart.png')} alt="" />
+                                                <img src={Images.Cart} alt="" />
                                                 <div class="cart_count"><span>10</span></div>
                                             </div>
                                             <div class="cart_content">
@@ -188,7 +190,7 @@ class Home extends Component {
                     <div class="banner_background" ></div>
                     <div class="container fill_height">
                         <div class="row fill_height">
-                            <div class="banner_product_image"><img src={require(`../Images/banner_product.png`)} alt="" /></div>
+                            <div class="banner_product_image"><img src={Images.banner_product} alt="" /></div>
                             <div class="col-lg-5 offset-lg-4 fill_height">
                                 <div class="banner_content">
                                     <h1 class="banner_text">new era of E-Commerce</h1>
@@ -205,7 +207,7 @@ class Home extends Component {
                         <div class="row">
                             <div class="col-lg-3 col-md-6 char_col">
                                 <div class="char_item d-flex flex-row align-items-center justify-content-start">
-                                    <div class="char_icon"><img src={require('../Images/home/char_1.png')} alt="" /></div>
+                                    <div class="char_icon"><img src={Images.char_1} alt="" /></div>
                                     <div class="char_content">
                                         <div class="char_title">Free Delivery</div>
                                         <div class="char_subtitle">from $50</div>
@@ -215,7 +217,7 @@ class Home extends Component {
 
                             <div class="col-lg-3 col-md-6 char_col">
                                 <div class="char_item d-flex flex-row align-items-center justify-content-start">
-                                    <div class="char_icon"><img src={require('../Images/home/char_2.png')} alt="" /></div>
+                                    <div class="char_icon"><img src={Images.char_2} alt="" /></div>
                                     <div class="char_content">
                                         <div class="char_title">Easy Returns</div>
                                         <div class="char_subtitle">Free</div>
@@ -225,7 +227,7 @@ class Home extends Component {
 
                             <div class="col-lg-3 col-md-6 char_col">
                                 <div class="char_item d-flex flex-row align-items-center justify-content-start">
-                                    <div class="char_icon"><img src={require('../Images/home/char_3.png')} alt="" /></div>
+                                    <div class="char_icon"><img src={Images.char_3} alt="" /></div>
                                     <div class="char_content">
                                         <div class="char_title">Money back</div>
                                         <div class="char_subtitle">100%</div>
@@ -235,7 +237,7 @@ class Home extends Component {
 
                             <div class="col-lg-3 col-md-6 char_col">
                                 <div class="char_item d-flex flex-row align-items-center justify-content-start">
-                                    <div class="char_icon"><img src={require('../Images/home/char_4.png')} alt="" /></div>
+                                    <div class="char_icon"><img src={Images.char_4} alt="" /></div>
                                     <div class="char_content">
                                         <div class="char_title">Support </div>
                                         <div class="char_subtitle">24/7</div>
@@ -265,7 +267,7 @@ class Home extends Component {
                                 <div class="tabbed_container">
                                     <div class="bestsellers_item discount" style={{ width: "100%", display: "inline-block" }}>
                                         <div class="bestsellers_item_container d-flex flex-row align-items-center justify-content-start">
-                                            <div class="bestsellers_image"><img src={require('../Images/home/best_1.png')} alt="" /></div>
+                                            <div class="bestsellers_image"><img src={Images.best_1} alt="" /></div>
                                             <div class="bestsellers_content">
                                                 <div class="bestsellers_category"><a href="#" tabindex="0">Headphones</a></div>
                                                 <div class="bestsellers_name"><a href="product.html" tabindex="0">Xiaomi Redmi Note 4</a></div>
@@ -287,7 +289,7 @@ class Home extends Component {
                                 <div class="tabbed_container">
                                     <div class="bestsellers_item discount" style={{ width: "100%", display: "inline-block" }}>
                                         <div class="bestsellers_item_container d-flex flex-row align-items-center justify-content-start">
-                                            <div class="bestsellers_image"><img src={require('../Images/home/best_1.png')} alt="" /></div>
+                                            <div class="bestsellers_image"><img src={Images.best_1} alt="" /></div>
                                             <div class="bestsellers_content">
                                                 <div class="bestsellers_category"><a href="#" tabindex="0">Headphones</a></div>
                                                 <div class="bestsellers_name"><a href="product.html" tabindex="0">Xiaomi Redmi Note 4</a></div>
@@ -309,7 +311,7 @@ class Home extends Component {
 
                                     <div class="bestsellers_item discount" style={{ width: "100%", display: "inline-block" }}>
                                         <div class="bestsellers_item_container d-flex flex-row align-items-center justify-content-start">
-                                            <div class="bestsellers_image"><img src={require('../Images/home/best_1.png')} alt="" /></div>
+                                            <div class="bestsellers_image"><img src={Images.best_1} alt="" /></div>
                                             <div class="bestsellers_content">
                                                 <div class="bestsellers_category"><a href="#" tabindex="0">Headphones</a></div>
                                                 <div class="bestsellers_name"><a href="product.html" tabindex="0">Xiaomi Redmi Note 4</a></div>
@@ -333,7 +335,7 @@ class Home extends Component {
                                 <div class="tabbed_container">
                                     <div class="bestsellers_item discount" style={{ width: "100%", display: "inline-block" }}>
                                         <div class="bestsellers_item_container d-flex flex-row align-items-center justify-content-start">
-                                            <div class="bestsellers_image"><img src={require('../Images/home/best_1.png')} alt="" /></div>
+                                            <div class="bestsellers_image"><img src={Images.best_1} alt="" /></div>
                                             <div class="bestsellers_content">
                                                 <div class="bestsellers_category"><a href="#" tabindex="0">Headphones</a></div>
                                                 <div class="bestsellers_name"><a href="product.html" tabindex="0">Xiaomi Redmi Note 4</a></div>
@@ -354,7 +356,7 @@ class Home extends Component {
                                 <div class="tabbed_container">
                                     <div class="bestsellers_item discount" style={{ width: "100%", display: "inline-block" }}>
                                         <div class="bestsellers_item_container d-flex flex-row align-items-center justify-content-start">
-                                            <div class="bestsellers_image"><img src={require('../Images/home/best_1.png')} alt="" /></div>
+                                            <div class="bestsellers_image"><img src={Images.best_1} alt="" /></div>
                                             <div class="bestsellers_content">
                                                 <div class="bestsellers_category"><a href="#" tabindex="0">Headphones</a></div>
                                                 <div class="bestsellers_name"><a href="product.html" tabindex="0">Xiaomi Redmi Note 4</a></div>
@@ -375,7 +377,7 @@ class Home extends Component {
                                 <div class="tabbed_container">
                                     <div class="bestsellers_item discount" style={{ width: "100%", display: "inline-block" }}>
                                         <div class="bestsellers_item_container d-flex flex-row align-items-center justify-content-start">
-                                            <div class="bestsellers_image"><img src={require('../Images/home/best_1.png')} alt="" /></div>
+                                            <div class="bestsellers_image"><img src={Images.best_1} alt="" /></div>
                                             <div class="bestsellers_content">
                                                 <div class="bestsellers_category"><a href="#" tabindex="0">Headphones</a></div>
                                                 <div class="bestsellers_name"><a href="product.html" tabindex="0">Xiaomi Redmi Note 4</a></div>
@@ -410,7 +412,7 @@ class Home extends Component {
                             <div className="row">
                                 <div className="col">
                                     <div class="review d-flex flex-row align-items-start justify-content-start">
-                                        <div><div class="review_image"><img src={require('../Images/home/review_1.jpg')} alt="" /></div></div>
+                                        <div><div class="review_image"><img src={Images.review_1} alt="" /></div></div>
                                         <div class="review_content">
                                             <div class="review_name">Roberto Sanchez</div>
                                             <div class="review_rating_container">
@@ -423,7 +425,7 @@ class Home extends Component {
                                 </div>
                                 <div className="col">
                                     <div class="review d-flex flex-row align-items-start justify-content-start">
-                                        <div><div class="review_image"><img src={require('../Images/home/review_2.jpg')} alt="" /></div></div>
+                                        <div><div class="review_image"><img src={Images.review_2} alt="" /></div></div>
                                         <div class="review_content">
                                             <div class="review_name">Roberto Sanchez</div>
                                             <div class="review_rating_container">
@@ -436,7 +438,7 @@ class Home extends Component {
                                 </div>
                                 <div className="col">
                                     <div class="review d-flex flex-row align-items-start justify-content-start">
-                                        <div><div class="review_image"><img src={require('../Images/home/review_3.jpg')} alt="" /></div></div>
+                                        <div><div class="review_image"><img src={Images.review_3} alt="" /></div></div>
                                         <div class="review_content">
                                             <div class="review_name">Roberto Sanchez</div>
                                             <div class="review_rating_container">
@@ -468,7 +470,7 @@ class Home extends Component {
                             <div className="row">
                                 <div className="col">
                                     <div class="viewed_item d-flex flex-column align-items-center justify-content-center text-center">
-                                        <div class="viewed_image"><img src={require('../Images/home/view_2.jpg')} alt="" /></div>
+                                        <div class="viewed_image"><img src={Images.view_2} alt="" /></div>
                                         <div class="viewed_content text-center">
                                             <div class="viewed_price">$379</div>
                                             <div class="viewed_name"><a href="#">LUNA Smartphone</a></div>
@@ -481,7 +483,7 @@ class Home extends Component {
                                 </div>
                                 <div className="col">
                                     <div class="viewed_item d-flex flex-column align-items-center justify-content-center text-center">
-                                        <div class="viewed_image"><img src={require('../Images/home/view_3.jpg')} alt="" /></div>
+                                        <div class="viewed_image"><img src={Images.view_3} alt="" /></div>
                                         <div class="viewed_content text-center">
                                             <div class="viewed_price">$379</div>
                                             <div class="viewed_name"><a href="#">LUNA Smartphone</a></div>
@@ -494,7 +496,7 @@ class Home extends Component {
                                 </div>
                                 <div className="col">
                                     <div class="viewed_item d-flex flex-column align-items-center justify-content-center text-center">
-                                        <div class="viewed_image"><img src={require('../Images/home/view_4.jpg')} alt="" /></div>
+                                        <div class="viewed_image"><img src={Images.view_4} alt="" /></div>
                                         <div class="viewed_content text-center">
                                             <div class="viewed_price">$379</div>
                                             <div class="viewed_name"><a href="#">LUNA Smartphone</a></div>
@@ -507,7 +509,7 @@ class Home extends Component {
                                 </div>
                                 <div className="col">
                                     <div class="viewed_item d-flex flex-column align-items-center justify-content-center text-center">
-                                        <div class="viewed_image"><img src={require('../Images/home/view_5.jpg')} alt="" /></div>
+                                        <div class="viewed_image"><img src={Images.view_5} alt="" /></div>
                                         <div class="viewed_content text-center">
                                             <div class="viewed_price">$379</div>
                                             <div class="viewed_name"><a href="#">LUNA Smartphone</a></div>
@@ -520,7 +522,7 @@ class Home extends Component {
                                 </div>
                                 <div className="col">
                                     <div class="viewed_item d-flex flex-column align-items-center justify-content-center text-center">
-                                        <div class="viewed_image"><img src={require('../Images/home/view_6.jpg')} alt="" /></div>
+                                        <div class="viewed_image"><img src={Images.view_6} alt="" /></div>
                                         <div class="viewed_content text-center">
                                             <div class="viewed_price">$379</div>
                                             <div class="viewed_name"><a href="#">LUNA Smartphone</a></div>
@@ -533,7 +535,7 @@ class Home extends Component {
                                 </div>
                                 <div className="col">
                                     <div class="viewed_item d-flex flex-column align-items-center justify-content-center text-center">
-                                        <div class="viewed_image"><img src={require('../Images/home/view_3.jpg')} alt="" /></div>
+                                        <div class="viewed_image"><img src={Images.view_2} alt="" /></div>
                                         <div class="viewed_content text-center">
                                             <div class="viewed_price">$379</div>
                                             <div class="viewed_name"><a href="#">LUNA Smartphone</a></div>
@@ -555,7 +557,7 @@ class Home extends Component {
                             <div class="col">
                                 <div class="newsletter_container d-flex flex-lg-row flex-column align-items-lg-center align-items-center justify-content-lg-start justify-content-center">
                                     <div class="newsletter_title_container">
-                                        <div class="newsletter_icon"><img src={require('../Images/home/send.png')} alt="" /></div>
+                                        <div class="newsletter_icon"><img src={Images.send} alt="" /></div>
                                         <div class="newsletter_title">Sign up for Newsletter</div>
                                         <div class="newsletter_text"><p>...and receive %20 coupon for first shopping.</p></div>
                                     </div>
