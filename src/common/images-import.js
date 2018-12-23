@@ -21,7 +21,7 @@ import single_3 from '../images/home/single_3.jpg';
 import single_4 from '../images/home/single_4.jpg';
 
 
-export const images = {
+export const Images = {
     Search,
     Heart,
     Cart,
