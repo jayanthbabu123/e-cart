@@ -11,13 +11,13 @@ export default class ViewProduct extends Component {
                         <div class="row">
                             <div class="col-lg-2 order-lg-1 order-2">
                                 <ul class="image_list">
-                                    <li data-image="images/single_4.jpg"><img src={require("../Images/home/single_4.jpg")} alt="" /></li>
-                                    <li data-image="images/single_2.jpg"><img src={require("../Images/home/single_2.jpg")} alt="" /></li>
-                                    <li data-image="images/single_3.jpg"><img src={require("../Images/home/single_3.jpg")} alt="" /></li>
+                                    <li ><img src={require("/../Images/home/single_4.jpg")} alt="" /></li>
+                                    <li ><img src={require("/../Images/home/single_2.jpg")} alt="" /></li>
+                                    <li ><img src={require("/../Images/home/single_3.jpg")} alt="" /></li>
                                 </ul>
                             </div>
                             <div class="col-lg-5 order-lg-2 order-1">
-                                <div class="image_selected"><img src={require("../Images/home/single_4.jpg")} alt="" /></div>
+                                <div class="image_selected"><img src={require("/../Images/home/single_4.jpg")} alt="" /></div>
                             </div>
                             <div class="col-lg-5 order-3">
                                 <div class="product_description">
