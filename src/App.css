@@ -901,7 +901,7 @@ div
     box-sizing: border-box;
 }
 .banner_background{
-  background-image:url('./Images/banner_background.jpg')
+  background-image:url('/./Images/banner_background.jpg')
 }
 ul
 {
