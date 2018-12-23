@@ -423,7 +423,7 @@ class Home extends Component {
                                 </div>
                                 <div className="col">
                                     <div class="review d-flex flex-row align-items-start justify-content-start">
-                                        <div><div class="review_image"><img src={require('../Images/home/review_2.jpg')} alt="" /></div></div>
+                                        <div><div class="review_image"><img src={require('/../Images/home/review_2.jpg')} alt="" /></div></div>
                                         <div class="review_content">
                                             <div class="review_name">Roberto Sanchez</div>
                                             <div class="review_rating_container">
@@ -507,7 +507,7 @@ class Home extends Component {
                                 </div>
                                 <div className="col">
                                     <div class="viewed_item d-flex flex-column align-items-center justify-content-center text-center">
-                                        <div class="viewed_image"><img src={require('../Images/home/view_5.jpg')} alt="" /></div>
+                                        <div class="viewed_image"><img src={require('/../Images/home/view_5.jpg')} alt="" /></div>
                                         <div class="viewed_content text-center">
                                             <div class="viewed_price">$379</div>
                                             <div class="viewed_name"><a href="#">LUNA Smartphone</a></div>
