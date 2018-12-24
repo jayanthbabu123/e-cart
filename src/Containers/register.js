@@ -42,7 +42,7 @@ export default class Register extends Component {
             error => error.message && error.message.toLowerCase().includes(inputName)) ?
             'error input--style-4' : 'input--style-4'
     }
-    dispalyErrors = errors => errors.map((error, i) => <p key={i}> {error.message}</p>)
+    dispalyErrors = errors => errors.map((error, i) => <p className="m-0" key={i}> {error.message}</p>)
     handleSubmit = event => {
         event.preventDefault();
         if (this.isFormValid()) {
@@ -61,9 +61,11 @@ export default class Register extends Component {
                         this.saveUser(createdUser).then(() => {
                             console.log('user saved')
                         })
+                    
                     }).catch(err => {
                         this.setState({ errors: this.state.errors.concat(err), loading: false })
                     })
+                    localStorage.setItem('userData', JSON.stringify(createdUser));
                     console.log(createdUser);
                 }).catch(err => {
                     this.setState({ errors: this.state.errors.concat(err), loading: false });
@@ -149,10 +151,10 @@ export default class Register extends Component {
                                         </div>
                                     </div>
                                     {this.state.errors.length ?
-                                        <div className="alert alert-danger">{this.dispalyErrors(this.state.errors)}</div> : ''}
+                                        <div className="alert alert-danger m-t-10">{this.dispalyErrors(this.state.errors)}</div> : ''}
 
                                     <div class="p-t-15">
-                                        <button className="btn btn-success" disabled={loading} type="submit">Submit</button>
+                                        <button className="btn btn-success" disabled={loading} type="submit">Register</button>
                                     </div>
                                 </form>
                             </div>

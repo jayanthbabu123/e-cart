@@ -17,7 +17,6 @@ class Login extends Component {
         if (this.isFormValid(this.state)) {
             this.setState({ errors: [], loading: true });
             firebase.auth().signInWithEmailAndPassword(this.state.email, this.state.password).then((signInUser) => {
-                console.log(signInUser);
                 localStorage.setItem('userData', JSON.stringify(signInUser));
                 this.setState({
                     loading: false
@@ -33,9 +32,9 @@ class Login extends Component {
     handleInputError = (errors, inputName) => {
         return errors.some(
             error => error.message && error.message.toLowerCase().includes(inputName)) ?
-            'error' : ''
+            'error form-control' : 'form-control'
     }
-    dispalyErrors = errors => errors.map((error, i) => <p key={i}> {error.message}</p>)
+    dispalyErrors = errors => errors.map((error, i) => <p className="m-0" key={i}> {error.message}</p>)
 
     isFormValid = ({ email, password }) => email && password;
     render() {
@@ -50,20 +49,22 @@ class Login extends Component {
                                 <div class="card-body">
                                     <h5 class="card-title text-center">Sign In</h5>
                                     <form class="form-signin" onSubmit={this.handleSubmit}>
-                                        <div class="form-label-group">
+                                        <div class="form-group">
+                                            <label for="inputEmail">Email address</label>
                                             <input className={this.handleInputError(this.state.errors, 'email')}
                                                 onChange={this.handleChange}
                                                 type="email" id="inputEmail" class="form-control"
                                                 name="email" value={email} placeholder="Email address" required />
-                                            <label for="inputEmail">Email address</label>
+
                                         </div>
 
-                                        <div class="form-label-group">
+                                        <div class="form-group">
+                                            <label for="inputPassword">Password</label>
                                             <input className={this.handleInputError(this.state.errors, 'password')}
                                                 onChange={this.handleChange}
                                                 type="password" id="inputPassword" class="form-control" name="password"
                                                 value={password} placeholder="Password" required />
-                                            <label for="inputPassword">Password</label>
+
                                         </div>
 
                                         <div class="custom-control custom-checkbox mb-3">
@@ -72,7 +73,7 @@ class Login extends Component {
                                         </div>
                                         <button class="btn btn-lg btn-primary btn-block text-uppercase" type="submit">Sign in</button>
                                         {this.state.errors.length ?
-                                            <div className="alert alert-danger">{this.dispalyErrors(this.state.errors)}</div> : ''}
+                                            <div className="alert alert-danger m-t-10">{this.dispalyErrors(this.state.errors)}</div> : ''}
                                         <hr class="my-4" />
                                         <button class="btn btn-lg btn-google btn-block text-uppercase" type="submit" onClick={googleLogin()}><i class="fab fa-google mr-2"></i> Sign in with Google</button>
                                         <button class="btn btn-lg btn-facebook btn-block text-uppercase" type="submit"><i class="fab fa-facebook-f mr-2"></i> Sign in with Facebook</button>

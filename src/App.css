@@ -488,6 +488,12 @@ a.list-group-item-success.active, a.list-group-item-success.active:hover, a.list
 .p-t-10 {
   padding-top: 10px;
 }
+.m-0{
+	margin: 0
+}
+.m-t-10{
+	margin-top:10px
+}
 .page-wrapper .radio-container {
   display: inline-block;
   position: relative;
