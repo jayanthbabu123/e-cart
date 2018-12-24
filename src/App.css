@@ -457,12 +457,16 @@ a.list-group-item-success.active, a.list-group-item-success.active:hover, a.list
   position: relative;
   margin-bottom: 22px;
 }
+.error{
+	border:1px solid red !important;
+}
 .page-wrapper .label {
   font-size: 16px;
   color: #555;
   text-transform: capitalize;
   display: block;
   margin-bottom: 5px;
+  text-align: left
 }
 .page-wrapper .input--style-4 {
   line-height: 50px;

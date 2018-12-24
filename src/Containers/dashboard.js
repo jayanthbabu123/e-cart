@@ -2,10 +2,12 @@ import React, { Component } from 'react';
 import { Header } from '../boilerplate/header';
 class Dashboard extends Component {
     state = {
-        mobiles: []
+        mobiles: [],
+        userData: null
     }
     componentDidMount() {
-        
+        console.log("dashbord", JSON.parse(localStorage.getItem('userData')))
+        this.setState({ userData: JSON.parse(localStorage.getItem('userData')) })
     }
     render() {
         return (
@@ -49,6 +51,15 @@ class Dashboard extends Component {
                                 </ul>
                             </div>
 
+                        </div>
+                        <div className="col-md-9">
+                            {this.state.userData ? <div className="card">
+                                <div className="card-body text-center">
+                                    <img src={this.state.userData.photoURL} height={50} width={50} alt="" />
+                                    <h4 className="p-t-10">Hi {this.state.userData.displayName}</h4>
+                                    <h4 className="p-t-10 text-success">Welcome to One Buy</h4>
+                                </div>
+                            </div> : ''}
                         </div>
                     </div>
 
