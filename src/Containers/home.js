@@ -12,9 +12,10 @@ class Home extends Component {
     }
     render() {
         return (
-            <header>
-                <div class="header_main">
-                    <div class="container">
+            <React.Fragment>
+                <div className="">
+                <div class="header_main d-none d-md-block">
+                    <div class="container ">
                         <div class="row">
                             <div class="col-lg-2 col-sm-3 col-3 order-1">
                                 <div class="logo_container">
@@ -81,7 +82,7 @@ class Home extends Component {
                         </div>
                     </div>
                 </div>
-                <nav class="main_nav">
+                <nav class="main_nav d-none d-md-block">
                     <div class="container">
                         <div class="row">
                             <div class="col">
@@ -186,7 +187,7 @@ class Home extends Component {
                         </div>
                     </div>
                 </nav>
-                <div class="banner">
+                <div class="banner d-none d-md-block">
                     <div class="banner_background" ></div>
                     <div class="container fill_height">
                         <div class="row fill_height">
@@ -251,8 +252,13 @@ class Home extends Component {
 
                 <div class="best_sellers">
                     <div class="container">
+                    <div className="row">
+                     <div className="col">
+                     <div class="new_arrivals_title m-b-10">Hot Best Sellers</div>
+                     </div>
+                    </div>
                         <div class="row">
-                            <div className="tabbed_container">
+                            {/* <div className="tabbed_container">
                                 <div class="tabs clearfix tabs-right">
                                     <div class="new_arrivals_title">Hot Best Sellers</div>
                                     <ul class="clearfix">
@@ -260,9 +266,9 @@ class Home extends Component {
                                         <li>Audio &amp; Video</li>
                                         <li>Laptops &amp; Computers</li>
                                     </ul>
-                                    <div class="tabs_line"><span style={{ left: "666.828px", width: "58.1094px" }}></span></div>
+                                    
                                 </div>
-                            </div>
+                            </div> */}
                             <div class="col">
                                 <div class="tabbed_container">
                                     <div class="bestsellers_item discount" style={{ width: "100%", display: "inline-block" }}>
@@ -289,7 +295,7 @@ class Home extends Component {
                                 <div class="tabbed_container">
                                     <div class="bestsellers_item discount" style={{ width: "100%", display: "inline-block" }}>
                                         <div class="bestsellers_item_container d-flex flex-row align-items-center justify-content-start">
-                                            <div class="bestsellers_image"><img src={Images.best_1} alt="" /></div>
+                                            <div class="bestsellers_image"><img src={Images.view_2} alt="" /></div>
                                             <div class="bestsellers_content">
                                                 <div class="bestsellers_category"><a href="#" tabindex="0">Headphones</a></div>
                                                 <div class="bestsellers_name"><a href="product.html" tabindex="0">Xiaomi Redmi Note 4</a></div>
@@ -311,7 +317,7 @@ class Home extends Component {
 
                                     <div class="bestsellers_item discount" style={{ width: "100%", display: "inline-block" }}>
                                         <div class="bestsellers_item_container d-flex flex-row align-items-center justify-content-start">
-                                            <div class="bestsellers_image"><img src={Images.best_1} alt="" /></div>
+                                            <div class="bestsellers_image"><img src={Images.view_3} alt="" /></div>
                                             <div class="bestsellers_content">
                                                 <div class="bestsellers_category"><a href="#" tabindex="0">Headphones</a></div>
                                                 <div class="bestsellers_name"><a href="product.html" tabindex="0">Xiaomi Redmi Note 4</a></div>
@@ -335,7 +341,7 @@ class Home extends Component {
                                 <div class="tabbed_container">
                                     <div class="bestsellers_item discount" style={{ width: "100%", display: "inline-block" }}>
                                         <div class="bestsellers_item_container d-flex flex-row align-items-center justify-content-start">
-                                            <div class="bestsellers_image"><img src={Images.best_1} alt="" /></div>
+                                            <div class="bestsellers_image"><img src={Images.view_4} alt="" /></div>
                                             <div class="bestsellers_content">
                                                 <div class="bestsellers_category"><a href="#" tabindex="0">Headphones</a></div>
                                                 <div class="bestsellers_name"><a href="product.html" tabindex="0">Xiaomi Redmi Note 4</a></div>
@@ -356,7 +362,7 @@ class Home extends Component {
                                 <div class="tabbed_container">
                                     <div class="bestsellers_item discount" style={{ width: "100%", display: "inline-block" }}>
                                         <div class="bestsellers_item_container d-flex flex-row align-items-center justify-content-start">
-                                            <div class="bestsellers_image"><img src={Images.best_1} alt="" /></div>
+                                            <div class="bestsellers_image"><img src={Images.view_5} alt="" /></div>
                                             <div class="bestsellers_content">
                                                 <div class="bestsellers_category"><a href="#" tabindex="0">Headphones</a></div>
                                                 <div class="bestsellers_name"><a href="product.html" tabindex="0">Xiaomi Redmi Note 4</a></div>
@@ -377,7 +383,7 @@ class Home extends Component {
                                 <div class="tabbed_container">
                                     <div class="bestsellers_item discount" style={{ width: "100%", display: "inline-block" }}>
                                         <div class="bestsellers_item_container d-flex flex-row align-items-center justify-content-start">
-                                            <div class="bestsellers_image"><img src={Images.best_1} alt="" /></div>
+                                            <div class="bestsellers_image"><img src={Images.view_6} alt="" /></div>
                                             <div class="bestsellers_content">
                                                 <div class="bestsellers_category"><a href="#" tabindex="0">Headphones</a></div>
                                                 <div class="bestsellers_name"><a href="product.html" tabindex="0">Xiaomi Redmi Note 4</a></div>
@@ -410,7 +416,7 @@ class Home extends Component {
                         </div>
                         <div className="reviews_slider_container">
                             <div className="row">
-                                <div className="col">
+                                <div className="col review-card">
                                     <div class="review d-flex flex-row align-items-start justify-content-start">
                                         <div><div class="review_image"><img src={Images.review_1} alt="" /></div></div>
                                         <div class="review_content">
@@ -423,7 +429,7 @@ class Home extends Component {
                                         </div>
                                     </div>
                                 </div>
-                                <div className="col">
+                                <div className="col review-card">
                                     <div class="review d-flex flex-row align-items-start justify-content-start">
                                         <div><div class="review_image"><img src={Images.review_2} alt="" /></div></div>
                                         <div class="review_content">
@@ -436,7 +442,7 @@ class Home extends Component {
                                         </div>
                                     </div>
                                 </div>
-                                <div className="col">
+                                <div className="col review-card">
                                     <div class="review d-flex flex-row align-items-start justify-content-start">
                                         <div><div class="review_image"><img src={Images.review_3} alt="" /></div></div>
                                         <div class="review_content">
@@ -561,7 +567,7 @@ class Home extends Component {
                                         <div class="newsletter_title">Sign up for Newsletter</div>
                                         <div class="newsletter_text"><p>...and receive %20 coupon for first shopping.</p></div>
                                     </div>
-                                    <div class="newsletter_content clearfix">
+                                    <div class="newsletter_content col">
                                         <form action="#" class="newsletter_form">
                                             <input type="email" class="newsletter_input" required="required" placeholder="Enter your email address" />
                                             <button class="newsletter_button">Subscribe</button>
@@ -647,7 +653,9 @@ class Home extends Component {
                         </div>
                     </div>
                 </footer>
-            </header>
+                </div>
+               
+            </React.Fragment>
 
         );
     }

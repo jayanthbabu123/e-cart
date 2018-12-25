@@ -43,9 +43,9 @@ export class Header extends Component {
                             </ul>}
                         <form className="form-inline mt-2 mt-md-0">
                             <input className="form-control mr-sm-2" type="text" placeholder="Search" aria-label="Search" />
-                            {this.props.location.pathname === '/login' ? <button className="btn btn-primary login_button" ><Link to="/register">Register</Link> </button> : ''}
-                            {this.props.location.pathname === '/register' ? <button className="btn btn-primary login_button" ><Link to="/login">Login</Link> </button> : ''}
-                            {this.state.userData ? <button className="btn btn-primary login_button" ><Link to="/login" onClick={startSignOut()}>Logout</Link> </button> : ""}
+                            {this.props.location.pathname === '/login' ? <button className="btn btn-outline-success my-2 my-sm-0" ><Link to="/register">Register</Link> </button> : ''}
+                            {this.props.location.pathname === '/register' ? <button className="btn btn-outline-success my-2 my-sm-0" ><Link to="/login">Login</Link> </button> : ''}
+                            {this.state.userData ? <button className="btn btn-outline-success my-2 my-sm-0" ><Link to="/login" onClick={startSignOut()}>Logout</Link> </button> : ""}
                         </form>
                     </div>
                 </nav>

@@ -11,6 +11,9 @@
 .nav-link{
   font-size: 17px;
 }
+.m-b-10{
+	margin-bottom: 10px !important
+}
 
 .label-primary {
   background-color: #428bca;
@@ -616,6 +619,12 @@ radio-container input:checked ~ .checkmark {
 .card-4 .card-body {
   padding: 57px 65px;
   padding-bottom: 65px;
+}
+@media(max-width:768px){
+	.card-4 .card-body {
+		padding: 47px 15px;
+		padding-bottom: 65px;
+	  }
 }
 .page-wrapper .title {
   font-size: 24px;
@@ -3059,12 +3068,8 @@ select option
 }
 .new_arrivals_title
 {
-	position: absolute;
-	left: 0;
-	top: -7px;
 	font-size: 24px;
 	font-weight: 500;
-	margin-bottom: -29px;
 }
 .arrivals_slider
 {
@@ -4044,7 +4049,7 @@ select option
 }
 .viewed_slider_container
 {
-	padding-top: 50px;
+	padding-top: 37px;
 }
 .viewed_item
 {
@@ -4236,7 +4241,6 @@ select option
 }
 .newsletter_title_container
 {
-	width: 40%;
 	padding-left: 95px;
 }
 .newsletter_icon
@@ -4263,16 +4267,23 @@ select option
 {
 	max-width: 100%;
 }
+.viewed_slider_container .col{
+	margin-bottom: 13px
+}
+.review-card{
+	padding: 13px;
+	margin-bottom: 10px
+}
 .newsletter_content
 {
-	width: 60%;
+	/* width: 60%; */
 }
-.newsletter_form
+/* .newsletter_form
 {
 	position: relative;
 	width: 569px;
 	float: left;
-}
+} */
 .newsletter_input
 {
 	width: 100%;
