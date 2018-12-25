@@ -50,7 +50,7 @@ class Login extends Component {
                                     <h5 class="card-title text-center">Sign In</h5>
                                     <form class="form-signin" onSubmit={this.handleSubmit}>
                                         <div class="form-group">
-                                            <label for="inputEmail">Email address</label>
+                                            <label className="text-primary" for="inputEmail">Email address</label>
                                             <input className={this.handleInputError(this.state.errors, 'email')}
                                                 onChange={this.handleChange}
                                                 type="email" id="inputEmail" class="form-control"
@@ -59,7 +59,7 @@ class Login extends Component {
                                         </div>
 
                                         <div class="form-group">
-                                            <label for="inputPassword">Password</label>
+                                            <label className="text-primary" for="inputPassword">Password</label>
                                             <input className={this.handleInputError(this.state.errors, 'password')}
                                                 onChange={this.handleChange}
                                                 type="password" id="inputPassword" class="form-control" name="password"

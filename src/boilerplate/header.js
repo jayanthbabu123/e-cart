@@ -17,7 +17,7 @@ export class Header extends Component {
     render() {
         return (
             <React.Fragment>
-                <nav className="navbar navbar-expand-md navbar-dark fixed-top bg-dark">
+                <nav className="navbar navbar-expand-md navbar-light bg-light fixed-top ">
                     <a className="navbar-brand header-title" ><div class="logo_container">
                         <div class="logo"><a href="#">One Buy</a></div>
                     </div></a>

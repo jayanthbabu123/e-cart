@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import {Link} from 'react-router-dom';
 import {startSignOut} from '../firebase/auth';
+import { Header } from '../boilerplate/header';
 import Search from '../images/home/search.png';
 import {Images} from '../common/images-import';
 class Home extends Component {
@@ -13,6 +14,7 @@ class Home extends Component {
     render() {
         return (
             <React.Fragment>
+                {/* <Header location={this.props.history.location}></Header> */}
                 <div className="">
                 <div class="header_main d-none d-md-block">
                     <div class="container ">

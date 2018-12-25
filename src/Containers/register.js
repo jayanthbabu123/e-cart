@@ -99,23 +99,23 @@ export default class Register extends Component {
                                     <div class="row row-space">
                                         <div class="col-6">
                                             <div class="input-group">
-                                                <label class="label">first name</label>
-                                                <input class="input--style-4" type="text" name="first_name" value={first_name} onChange={this.handelChange} />
+                                                <label className="text-primary">First name</label>
+                                                <input class="input--style-4" type="text" name="first_name" value={first_name} onChange={this.handelChange} placeholder="Enter first name" />
                                             </div>
                                         </div>
                                         <div class="col-6">
                                             <div class="input-group">
-                                                <label class="label">last name</label>
-                                                <input class="input--style-4" type="text" name="last_name" value={last_name} onChange={this.handelChange} />
+                                                <label className="text-primary">Last name</label>
+                                                <input class="input--style-4" type="text" name="last_name" value={last_name} onChange={this.handelChange} placeholder="Enter last name" />
                                             </div>
                                         </div>
                                     </div>
                                     <div class="row row-space">
                                         <div class="col">
                                             <div class="form-group">
-                                                <label class="label">Password</label>
+                                                <label className="text-primary">Password</label>
                                                 <div class="input-group-icon">
-                                                    <input className={this.handleInputError(this.state.errors, 'password')} type="password" name="password" value={password} onChange={this.handelChange} />
+                                                    <input className={this.handleInputError(this.state.errors, 'password')} type="password" placeholder="Enter password" name="password" value={password} onChange={this.handelChange} />
                                                     <i class="zmdi zmdi-calendar-note input-icon js-btn-calendar"></i>
                                                 </div>
                                             </div>
@@ -139,14 +139,14 @@ export default class Register extends Component {
                                     <div class="row row-space">
                                         <div class="col-6">
                                             <div class="input-group">
-                                                <label class="label">Email</label>
-                                                <input className={this.handleInputError(this.state.errors, 'email')} type="email" name="email" value={email} onChange={this.handelChange} />
+                                                <label className="text-primary">Email</label>
+                                                <input placeholder="Enter email" className={this.handleInputError(this.state.errors, 'email')} type="email" name="email" value={email} onChange={this.handelChange} />
                                             </div>
                                         </div>
                                         <div class="col-6">
                                             <div class="input-group">
-                                                <label class="label">Phone Number</label>
-                                                <input class="input--style-4" type="text" name="phone" value={phone} onChange={this.handelChange} />
+                                                <label className="text-primary">Phone Number</label>
+                                                <input class="input--style-4" placeholder="Enter phone number" type="text" name="phone" value={phone} onChange={this.handelChange} />
                                             </div>
                                         </div>
                                     </div>
@@ -154,7 +154,7 @@ export default class Register extends Component {
                                         <div className="alert alert-danger m-t-10">{this.dispalyErrors(this.state.errors)}</div> : ''}
 
                                     <div class="p-t-15">
-                                        <button className="btn btn-success" disabled={loading} type="submit">Register</button>
+                                        <button className="btn btn-success btn-block btn-lg" disabled={loading} type="submit">Register</button>
                                     </div>
                                 </form>
                             </div>
